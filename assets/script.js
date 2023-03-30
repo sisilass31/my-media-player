@@ -1,19 +1,19 @@
-const video_container = document.querySelector('.video_container');
+const container = document.querySelector('.container');
 
-//video
+// video
 const video = document.createElement('video');
 video.classList.add('video');
-video_container.appendChild(video);
+container.appendChild(video);
 const source = document.createElement('source')
 source.setAttribute("src", "./assets/video_1080p.mp4");
 video.appendChild(source);
 
-//div contrôle
+// div contrôle
 const controls = document.createElement('div');
 controls.classList.add('controls');
-video_container.appendChild(controls);
+container.appendChild(controls);
 
-//backward
+// backward
 const backward = document.createElement('button');
 backward.classList.add('backward');
 controls.appendChild(backward);
@@ -21,16 +21,16 @@ const backward_img = document.createElement('img');
 backward_img.setAttribute("src", "assets/img/backward.png");
 backward.appendChild(backward_img);
 
-//play
+// play
 const play = document.createElement('button');
 play.classList.add('play');
 controls.appendChild(play);
 const icon_play = document.createElement('img');
 icon_play.classList.add('icon_play');
-icon_play.setAttribute("src", "./assets/img/play.png");
+icon_play.setAttribute("src", "./assets/img/pause.png");
 play.appendChild(icon_play);
 
-//foward
+// foward
 const foward = document.createElement('button');
 foward.classList.add('forward');
 controls.appendChild(foward);
